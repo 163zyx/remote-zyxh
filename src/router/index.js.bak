@@ -1,0 +1,47 @@
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Seller from '../components/charts/Seller.vue'
+import SellerPage from '../views/SellerPage.vue'
+import Stock from '../components/charts/Stock.vue'
+import StockPage from '../views/StockPage.vue'
+
+import TfProQualityVue from '../components/charts/TfProQuality.vue'
+
+// import Map from '../components/charts/Map.vue'
+import Rank from '../components/charts/Rank.vue'
+import RankPage from "../views/RankPage.vue"
+// import MapPage from "../views/MapPage.vue"
+import Dispatch from '../components/charts/Dispatch.vue'
+import ScreenPage from "../views/ScreenPage.vue"
+import Login from "../views/Login.vue"
+import Map from "../components/charts/tianditu/Map.vue"
+import Videos from "../components/charts/EzuikitVideo/Videos.vue"
+
+
+
+Vue.use(VueRouter)
+
+const routes = [
+  {
+    path: '/',
+    redirect: '/login'
+  },
+  {
+    path: '/login', component: Login
+  },
+  {
+    path: '/screen', component: ScreenPage
+  },
+  {
+    path: '/map', component: Map
+  },
+  {
+    path: '/videos', component: Videos
+  }
+]
+
+const router = new VueRouter({
+  routes
+})
+
+export default router
