@@ -22,7 +22,7 @@
   // 加载js
   function addJs(filepath, callback) {
     var headerScript = document.getElementsByTagName('head')[0].getElementsByTagName("script");
-    var isReady = false;
+    var isReady = false; 
 
     for (var i = 0; i < headerScript.length; i++) {
       if (headerScript[i].getAttribute("src") == filepath) {
