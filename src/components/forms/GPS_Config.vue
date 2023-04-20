@@ -365,6 +365,7 @@ export default {
 
   created() {
     this.initTable();
+    console.log(initTable)
   },
 
   mounted() {
